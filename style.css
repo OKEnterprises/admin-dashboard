@@ -1,0 +1,138 @@
+:root {
+    --light-gray: #e2e8f0;
+    --light-blue: #1992d4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+    background-color: var(--light-blue);
+    grid-column: 1;
+    grid-row: 1 / end;
+    display: grid;
+    grid-template-columns: 3em auto;
+    grid-template-rows: repeat(auto-fit, 100px);
+}
+
+.sidebar > .col-1 {
+    grid-column: 1;
+}
+
+.sidebar > .col-2 {
+    grid-column: 2;
+}
+
+.sidebar > .row-1 {
+    grid-row: 1;
+}
+
+.sidebar > .row-3 {
+    grid-row: 3;
+}
+
+.sidebar > .row-4 {
+    grid-row: 4;
+}
+
+.sidebar > .row-5 {
+    grid-row: 5;
+}
+
+.sidebar > .row-6 {
+    grid-row: 6;
+}
+
+.sidebar > .row-7 {
+    grid-row: 7;
+}
+
+.sidebar > .row-8 {
+    grid-row: 8;
+}
+
+
+
+
+.header {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#search-icon {
+    height: 20px;
+}
+
+#search-bar {
+    height: 20px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: var(--light-gray);
+    resize: none;
+    width: 82.5%;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#notification-bell {
+    height: 20px;
+}
+
+.prof-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("./assets/tom_and_jerry.jpg");
+    background-color: var(--light-blue);
+}
+
+.user-info {
+    grid-row: 2;
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-container {
+    grid-row: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-button {
+    background-color: var(--light-blue);
+    color: white;
+    height: 3rem;
+    width: 5rem;
+    border: 0px;
+    border-radius: 1.25rem;
+    font-weight: bold;
+}
