@@ -19,6 +19,7 @@
     display: grid;
     grid-template-columns: 3em auto;
     grid-template-rows: repeat(auto-fit, 50px);
+    z-index: 2;
 }
 
 .sidebar > .col-1 {
@@ -79,11 +80,12 @@
 
 .header {
     background-color: white;
-    box-shadow: 10px 5px 5px black;
+    box-shadow: -5px 5px 5px darkgrey;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column: 2;
+    z-index: 1;
 }
 
 .search {
@@ -183,6 +185,8 @@
     border-radius: 0.5em;
     padding: 0.5em;
     border-left: 0.5rem solid var(--gold);
+    z-index: 1;
+    box-shadow: 5px 5px 5px darkgrey;
 }
 
 .project-card-title {
@@ -213,6 +217,7 @@
     border-radius: 0.5em;
     padding: 0.5em;
     display: grid;
+    box-shadow: 5px 5px 5px darkslategray;
 }
 
 .announce-card > hr {
@@ -227,6 +232,7 @@
     padding: 0.5em;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    box-shadow: 5px 5px 5px darkslategray;
 }
 
 .trends-card > * {
